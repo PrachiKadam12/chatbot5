@@ -37,4 +37,3 @@ def home():
         return render_template("home.html", msg=msg, chat=chat.strip())
     return render_template("home.html", chat="")
 
-    #app.run(debug=True, use_reloader=True)
