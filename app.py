@@ -35,8 +35,6 @@ def home():
         chat = old_chat + "\n\n" + new_chat
 
         return render_template("home.html", msg=msg, chat=chat.strip())
-    else:  
-        return render_template("home.html", chat="")
+    return render_template("home.html", chat="")
 
-if __name__ == "__main__":
     #app.run(debug=True, use_reloader=True)
